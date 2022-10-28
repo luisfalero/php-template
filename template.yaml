@@ -45,7 +45,7 @@ objects:
       sourceStrategy:
         from:
           kind: ImageStreamTag
-          name: php:7.2
+          name: php:7.3
           namespace: openshift
       type: Source
     successfulBuildsHistoryLimit: 5
@@ -196,7 +196,7 @@ objects:
         - quotesdb
         from:
           kind: ImageStreamTag
-          name: mysql:5.7
+          name: mysql:8.0
           namespace: openshift
       type: ImageChange
 - apiVersion: v1
@@ -272,7 +272,7 @@ parameters:
   displayName: Application Source Git URL
   description: The Git URL of the application source code
   required: true
-  value: https://github.com/tsrana/php-quotes
+  value: https://github.com/luisfalero/php-template
 - name: APP_GIR_REF
   displayName: Application Source Git Branch
   description: The Git URL of the application source branch
